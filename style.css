@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.e2c9a8697c09bc06476227bf3f882620?rik=u%2f5auy5gfp6c%2fA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f2eEBiuQ.jpg&ehk=LnFzM0OMHqzs5RgHRYp%2fvQDNo%2fJlwH5P5sShA63uJzw%3d&risl=&pid=ImgRaw&r=0');
+
+}
+.app{
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: aqua;
+}
+header p{
+    font-size: 20px;
+    color: rgb(89, 190, 30);
+}
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+.pads > div{
+height: 150px;
+width: 100px;
+flex: 1;
+}
+.pad1{
+    background: rgb(43, 148, 104);
+}
+.pad2{
+    background: rgb(148, 111, 43);
+}
+.pad3{
+    background: rgb(221, 71, 12);
+}
+.pad4{
+    background: rgb(101, 24, 153);
+}
+.pad5{
+    background: rgb(125, 153, 24);
+}
+.pad6{
+    background: rgb(230, 67, 208);
+}
+.visual >div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump{
+
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
